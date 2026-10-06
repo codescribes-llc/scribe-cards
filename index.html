@@ -4,11 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>Scribe Cards - Certification Flashcards</title>
-    <meta
-      name="description"
-      content="Flashcards grounded in hand-written certification study notes: Claude API, Agent Skills, GitHub Actions and Ansible."
-    />
+    <meta name="description" content="Flashcards grounded in hand-written certification study notes: Claude API, Agent Skills, GitHub Actions and Ansible." />
+
+    <!--
+      Link previews (Slack, LinkedIn, X). Their crawlers read this HTML and never run the
+      app, so each route needs these in its own file. `scripts/write-route-pages.ts`
+      rewrites the title, description and URL lines per route after the build, which is why
+      each tag stays on one line. Image URLs must be absolute.
+    -->
+    <link rel="canonical" href="https://flashcards.codescribes.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Scribe Cards" />
+    <meta property="og:title" content="Scribe Cards - Certification Flashcards" />
+    <meta property="og:description" content="Flashcards grounded in hand-written certification study notes: Claude API, Agent Skills, GitHub Actions and Ansible." />
+    <meta property="og:url" content="https://flashcards.codescribes.io/" />
+    <meta property="og:image" content="https://flashcards.codescribes.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Scribe Cards - certification flashcards grounded in hand-written study notes" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Scribe Cards - Certification Flashcards" />
+    <meta name="twitter:description" content="Flashcards grounded in hand-written certification study notes: Claude API, Agent Skills, GitHub Actions and Ansible." />
+    <meta name="twitter:image" content="https://flashcards.codescribes.io/og-image.png" />
     <meta name="theme-color" content="#1B8996" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#09090B" media="(prefers-color-scheme: dark)" />
 
