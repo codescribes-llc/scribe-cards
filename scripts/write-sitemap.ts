@@ -2,8 +2,8 @@
  * Writes `dist/sitemap.xml` from the catalog and the notes on disk, so the file cannot
  * list a page that does not exist or miss one that does.
  *
- * It matters more than it looks. Until the Cloudflare Worker started correcting the
- * status, every route except `/` answered 404 and nothing but the homepage could be
+ * It matters more than it looks. Until `write-route-pages.ts` gave every route a real
+ * file, every route except `/` answered 404 and nothing but the homepage could be
  * indexed. With that fixed there are 35 indexable pages and no external links to most of
  * them, so a sitemap is how a crawler finds them at all.
  *
